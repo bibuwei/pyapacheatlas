@@ -110,12 +110,12 @@ if __name__ == "__main__":
 
     # Authenticate against your Atlas server
     oauth = ServicePrincipalAuthentication(
-        tenant_id=os.environ.get("TENANT_ID", ""),
-        client_id=os.environ.get("CLIENT_ID", ""),
-        client_secret=os.environ.get("CLIENT_SECRET", "")
+        tenant_id=os.environ.get("TENANT_ID", "72f988bf-86f1-41af-91ab-2d7cd011db47"),
+        client_id=os.environ.get("CLIENT_ID", "a5e48d97-b9c6-4eb1-847d-23e7a1ec9030"),
+        client_secret=os.environ.get("CLIENT_SECRET", "En_7Q~GdICL1xGTeMXJtZuSbWWeviJyOTkXo_")
     )
     client = PurviewClient(
-        account_name = os.environ.get("PURVIEW_NAME", ""),
+        account_name = os.environ.get("PURVIEW_NAME", "tpcdsdatagovernance"),
         authentication=oauth
     )
 
